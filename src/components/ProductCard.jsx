@@ -3,8 +3,8 @@ import React from 'react'
 function ProductCard({ product }) {
   return (
     <div key={product.id} className="product-card bg-white transition-all duration-300 flex flex-col">
-      <img src={product.image} alt={product.name} className="w-100" />
-      <div className='flex-grow-1'></div>
+      <img src={product.image} alt={product.name} className="w-100 h-[300px] object-fit-contain" />
+      {/* <div className='flex-grow-1'></div> */}
       <h1 className='text-xs uppercase text-gray-400 tracking-wide mb-1'>{product.category}</h1>
       <h2 className='text-base font-semibold text-gray-800 mb-1'>{product.name}</h2>
       <span className="text-sm text-gray-600 mb-1">{product.rating}</span>
